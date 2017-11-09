@@ -25,26 +25,16 @@
                     var i = 0;
                     $.each( lines, function( key, value ){
 
-                        console.log( value );
-                        if( i == 0 )
-                        {
-                            menu += '<tr>';
-                        }
+                        if( i == 0 ) menu += '<tr>';
 
-                        if( i != 3 )
-                        {
-                            menu += '<td>' + value + '</td>';
-                        }
+                        if( i != 3 ) menu += '<td>' + value + '</td>';
 
-                        if( i == 2 )
-                        {
-                            menu += '</tr>';
-                        }
+                        if( i == 2 ) menu += '</tr>';
 
                         if( i == 3 )
-                        {
                             i = 0;
-                        }
+                        else
+                            i++;
                     });
 
                 });
