@@ -9,7 +9,7 @@
                 //$( ".menu_area" ).load( "parts/menus/menu_"+$(this).val()+".html" );
 
                 var menu = "";
-                menu += '<table class="food_menus menu_1 alt">';
+                menu += '<table class="food_menus menu_' + $(this).val() + ' alt">';
                 menu += '<thead>';
                 menu += '<tr>';
                 menu += '<th>Name</th>';
@@ -19,17 +19,36 @@
                 menu += '</thead>';
                 menu += '<tbody>';
 
+                // var lines = ["black bean salsa & chips",
+                //     "aka - black bean dip - black beans, red onion, sweet peppers, cilantro, sour cream, Tipper’s own seasoned tortilla chips",
+                //     "8.00",
+                //     "",
+                //     "quesadilla",
+                //     "Veggie option, or seasoned chicken, sweet peppers, feta and cheddar",
+                //     "12.50",
+                //     ""];
+
+
                 $.get( "parts/menus/menu_" + $( this ).val() + ".txt", function( data ) {
                     var lines = data.split( "\n" );
 
                     var i = 0;
                     $.each( lines, function( key, value ){
 
-                        if( i == 0 ) menu += '<tr>';
+                        if( i == 0 )
+                        {
+                            menu += '<tr>';
+                        }
 
-                        if( i != 3 ) menu += '<td>' + value + '</td>';
+                        if( i != 3 )
+                        {
+                            menu += '<td>' + value + '</td>';
+                        }
 
-                        if( i == 2 ) menu += '</tr>';
+                        if( i == 2 )
+                        {
+                            menu += '</tr>';
+                        }
 
                         if( i == 3 )
                             i = 0;
@@ -41,7 +60,7 @@
 
                 menu += '</tbody>';
                 menu += '</table>';
-
+                console.log( menu );
                 $( ".menu_area" ).html( menu );
             }
             else
