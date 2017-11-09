@@ -42,17 +42,19 @@
 			});
 
 		// Menu.
-			$('#menu')
-				.append('<a href="#menu" class="close"></a>')
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right'
-				});
+            $( ".header" ).load( "parts/header.html", function() {
+                $('#menu')
+    				.append('<a href="#menu" class="close"></a>')
+    				.appendTo($body)
+    				.panel({
+    					delay: 500,
+    					hideOnClick: true,
+    					hideOnSwipe: true,
+    					resetScroll: true,
+    					resetForms: true,
+    					side: 'right'
+    				});
+            });
 
 		// Header.
 			if (skel.vars.IEVersion < 9)
@@ -71,6 +73,9 @@
 				});
 
 			}
+
+        // Footer.
+            $( ".footer" ).load( "parts/footer.html" );
 
 		// Banner.
 			var $banner = $('#banner');
