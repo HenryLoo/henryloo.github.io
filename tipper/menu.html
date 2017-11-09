@@ -41,81 +41,26 @@
 								<p>Check out the food!</p>
 							</header>
 							<div class="flex flex-2">
-								<div class="">
 
-                                    <pre><code>* select list not implemented, will need to use javascript to show/hide different menus on select</code></pre>
-
-                                    <div class="6u$ 12u$(xsmall)">
-                                        <div class="select-wrapper">
-                                            <select name="category" id="category">
-                                                <option value="">- Select a category -</option>
-                                                <option value="1">Appetizers</option>
-                                                <option value="2">Salads & Soups</option>
-                                                <option value="3">Sandwiches</option>
-                                                <option value="4">Burgers</option>
-                                                <option value="5">Penne Pasta</option>
-                                                <option value="6">Hotplates</option>
-                                                <option value="7">Grilled</option>
-                                                <option value="8">Breakfast</option>
-                                            </select>
-                                        </div>
+                                    <!-- Menu select list -->
+                                    <div class="6u$ 12u$(xsmall) select-wrapper">
+                                        <select name="category" id="category" class="menu_select">
+                                            <option value="">- Select a category -</option>
+                                            <option value="1">Appetizers</option>
+                                            <option value="2">Salads & Soups</option>
+                                            <option value="3">Sandwiches</option>
+                                            <option value="4">Burgers</option>
+                                            <option value="5">Penne Pasta</option>
+                                            <option value="6">Hotplates</option>
+                                            <option value="7">Grilled</option>
+                                            <option value="8">Breakfast</option>
+                                        </select>
                                     </div>
                                     <hr />
 
-                                    <div class="table-wrapper">
-
-                                        <table class="menu_appetizer alt">
-                                            <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Description</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>black bean salsa & chips</td>
-                                                    <td>aka - black bean dip - black beans, red onion, sweet peppers, cilantro, sour cream, Tipper’s own seasoned tortilla chips</td>
-                                                    <td>8.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>quesadilla</td>
-                                                    <td>Veggie option, or seasoned chicken, sweet peppers, feta and cheddar</td>
-                                                    <td>12.50</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>free run wings – one pound</td>
-                                                    <td>Cajun, sweet sambal oelek, or Tipper’s Jerk or Kaboom, served with house made ranch dipping sauce</td>
-                                                    <td>9.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>chicken strips</td>
-                                                    <td>sliced free range chicken breast, lightly breaded, with a light honey mustard dip</td>
-                                                    <td>9.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>garlic sweet potato fries</td>
-                                                    <td>Hand sliced non-processed Sweet potatoes, salt, chipotle mayo dip. so simple, so good</td>
-                                                    <td>8.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>naughty & nice Poutine</td>
-                                                    <td>house cut fries, Veggie Gravy with cheese curds, served with a NICE house salad</td>
-                                                    <td>12.50</td>
-                                                </tr>
-                                            </tbody>
-
-                                            <tfoot>
-                                                <tr>
-                                                    <td></td>
-                                                    <td>* make it a light meal by adding a side Caesar salad for 3.75</td>
-                                                    <td></td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-
+                                    <div class="12u table-wrapper menu_area">
                                     </div>
-                                </div>
+
 							</div>
 						</div>
 					</section>
@@ -141,6 +86,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/foodmenus.js"></script>
 
 	</body>
 </html>
