@@ -20,19 +20,31 @@
                 menu += '<tbody>';
 
                 $.get( "parts/menus/menu_" + $( this ).val() + ".txt", function( data ) {
-                    alert( data );
-                    var line = data.split( "\n" );
+                    var lines = data.split( "\n" );
+                    console.log( lines );
 
                     var i = 0;
-                    $.each( line, function( key, value ){
+                    $.each( lines, function( key, value ){
 
-                        if( i == 0 ) menu += '<tr>';
+                        if( i == 0 )
+                        {
+                            menu += '<tr>';
+                        }
 
-                        if( i != 3 ) menu += '<td>' + value + '</td>';
+                        if( i != 3 )
+                        {
+                            menu += '<td>' + value + '</td>';
+                        }
 
-                        if( i == 2 ) menu += '</tr>';
+                        if( i == 2 )
+                        {
+                            menu += '</tr>';
+                        }
 
-                        if( i == 3 ) i = 0;
+                        if( i == 3 )
+                        {
+                            i = 0;
+                        }
                     });
 
                 });
