@@ -21,11 +21,11 @@
 
                 $.get( "parts/menus/menu_" + $( this ).val() + ".txt", function( data ) {
                     var lines = data.split( "\n" );
-                    console.log( lines );
 
                     var i = 0;
                     $.each( lines, function( key, value ){
 
+                        console.log( value );
                         if( i == 0 )
                         {
                             menu += '<tr>';
