@@ -5,7 +5,7 @@
         $( ".menu_select" ).change( function() {
 
             if( $(this).val() )
-                $( ".menu_area" ).load( "menus/menu_"+$(this).val()+".html" );
+                $( ".menu_area" ).load( "parts/menus/menu_"+$(this).val()+".html" );
             else
                 $( ".menu_area" ).empty();
         });
