@@ -39,7 +39,7 @@
 
                 });
 
-                menu += '<tbody>';
+                menu += '</tbody>';
                 menu += '</table>';
 
                 $( ".menu_area" ).html( menu );
