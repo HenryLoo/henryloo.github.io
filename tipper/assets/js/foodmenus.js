@@ -20,8 +20,8 @@
                 menu += '<tbody>';
 
                 $.get( "parts/menus/menu_" + $( this ).val() + ".txt", function( data ) {
-
-                  var line = data.split( "\n" );
+                    alert( data );
+                    var line = data.split( "\n" );
 
                     var i = 0;
                     $.each( line, function( key, value ){
@@ -39,7 +39,7 @@
 
                 menu += '<tbody>';
                 menu += '</table>';
-                
+
                 $( ".menu_area" ).html( menu );
             }
             else
