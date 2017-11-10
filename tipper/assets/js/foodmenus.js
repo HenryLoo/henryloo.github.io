@@ -50,14 +50,11 @@
                             row += '</tr>';
                         }
 
-                        console.log( row );
-
                         if( i == 3 )
                         {
                             i = 0;
                             menu += row;
                             row = "";
-                            console.log( menu );
                         }
                         else
                         {
