@@ -17,10 +17,10 @@
                 //     "12.50",
                 //     ""];
 
+                var menuNum = $( this ).val();
+                $.get( "parts/menus/menu_" + menuNum + ".txt", function( data ) {
 
-                $.get( "parts/menus/menu_" + $( this ).val() + ".txt", function( data ) {
-
-                    var menu = '<table class="food_menus menu_' + $(this).val() + ' alt">';
+                    var menu = '<table class="food_menus menu_' + menuNum + ' alt">';
                     menu += '<thead>';
                     menu += '<tr>';
                     menu += '<th>Name</th>';
@@ -70,7 +70,7 @@
                     console.log( menu );
                     $( ".menu_area" ).html( menu );
                 });
-                
+
             }
             else
                 $( ".menu_area" ).empty();
