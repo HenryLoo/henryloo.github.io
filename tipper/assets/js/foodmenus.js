@@ -68,10 +68,10 @@
 
                 });
 
-                console.log( menu );
                 menu += '</tbody>';
                 menu += '</table>';
 
+                console.log( menu );
                 $( ".menu_area" ).html( menu );
             }
             else
