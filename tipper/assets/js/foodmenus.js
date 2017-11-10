@@ -8,16 +8,6 @@
             {
                 //$( ".menu_area" ).load( "parts/menus/menu_"+$(this).val()+".html" );
 
-                var menu = '<table class="food_menus menu_' + $(this).val() + ' alt">';
-                menu += '<thead>';
-                menu += '<tr>';
-                menu += '<th>Name</th>';
-                menu += '<th>Description</th>';
-                menu += '<th>Price</th>';
-                menu += '</tr>';
-                menu += '</thead>';
-                menu += '<tbody>';
-
                 // var lines = ["black bean salsa & chips",
                 //     "aka - black bean dip - black beans, red onion, sweet peppers, cilantro, sour cream, Tipper’s own seasoned tortilla chips",
                 //     "8.00",
@@ -29,6 +19,17 @@
 
 
                 $.get( "parts/menus/menu_" + $( this ).val() + ".txt", function( data ) {
+
+                    var menu = '<table class="food_menus menu_' + $(this).val() + ' alt">';
+                    menu += '<thead>';
+                    menu += '<tr>';
+                    menu += '<th>Name</th>';
+                    menu += '<th>Description</th>';
+                    menu += '<th>Price</th>';
+                    menu += '</tr>';
+                    menu += '</thead>';
+                    menu += '<tbody>';
+
                     var lines = data.split( "\n" );
 
                     var i = 0;
@@ -63,13 +64,13 @@
 
                     });
 
+                    menu += '</tbody>';
+                    menu += '</table>';
+
+                    console.log( menu );
+                    $( ".menu_area" ).html( menu );
                 });
-
-                menu += '</tbody>';
-                menu += '</table>';
-
-                console.log( menu );
-                $( ".menu_area" ).html( menu );
+                
             }
             else
                 $( ".menu_area" ).empty();
