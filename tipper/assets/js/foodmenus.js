@@ -33,34 +33,44 @@
                     var lines = data.split( "\n" );
 
                     var i = 0;
+                    var row = "";
                     $.each( lines, function( key, value ){
 
                         if( i == 0 )
                         {
-                            menu += '<tr>';
+                            row += '<tr>';
                         }
 
                         if( i != 3 )
                         {
-                            menu += '<td>' + value + '</td>';
+                            row += '<td>' + value + '</td>';
                         }
 
                         if( i == 2 )
                         {
-                            menu += '</tr>';
+                            row += '</tr>';
                         }
 
+                        console.log( row );
+                        
                         if( i == 3 )
+                        {
                             i = 0;
+                            menu += row;
+                            row = "";
+                        }
                         else
+                        {
                             i++;
+                        }
+
                     });
 
                 });
 
                 menu += '</tbody>';
                 menu += '</table>';
-                console.log( menu );
+
                 $( ".menu_area" ).html( menu );
             }
             else
