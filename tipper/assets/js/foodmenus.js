@@ -2,22 +2,24 @@
 
 	$(function() {
 
+        $.get( "parts/menus/menu_select.txt", function( data ) {
+            var select = '<option value="">- Select a category -</option>';
+
+            var lines = data.split( "\n" );
+            var i = 1;
+            $.each( lines, function( key, value ) {
+                select += '<option value="' + i + '">' + value + '</option>';
+                i++;
+            });
+
+            $( ".menu_select" ).html( select );
+        });
+
         $( ".menu_select" ).change( function() {
 
-            if( $( this ).val() )
+            var menuNum = $( this ).val();
+            if( menuNum )
             {
-                //$( ".menu_area" ).load( "parts/menus/menu_"+$(this).val()+".html" );
-
-                // var lines = ["black bean salsa & chips",
-                //     "aka - black bean dip - black beans, red onion, sweet peppers, cilantro, sour cream, Tipper’s own seasoned tortilla chips",
-                //     "8.00",
-                //     "",
-                //     "quesadilla",
-                //     "Veggie option, or seasoned chicken, sweet peppers, feta and cheddar",
-                //     "12.50",
-                //     ""];
-
-                var menuNum = $( this ).val();
                 $.get( "parts/menus/menu_" + menuNum + ".txt", function( data ) {
 
                     var menu = '<table class="food_menus menu_' + menuNum + ' alt">';
@@ -33,29 +35,26 @@
                     var lines = data.split( "\n" );
 
                     var i = 0;
-                    var row = "";
-                    $.each( lines, function( key, value ){
+                    $.each( lines, function( key, value ) {
 
                         if( i == 0 )
                         {
-                            row += '<tr>';
+                            menu += '<tr>';
                         }
 
                         if( i != 3 )
                         {
-                            row += '<td>' + value + '</td>';
+                            menu += '<td>' + value + '</td>';
                         }
 
                         if( i == 2 )
                         {
-                            row += '</tr>';
+                            menu += '</tr>';
                         }
 
                         if( i == 3 )
                         {
                             i = 0;
-                            menu += row;
-                            row = "";
                         }
                         else
                         {
@@ -67,7 +66,6 @@
                     menu += '</tbody>';
                     menu += '</table>';
 
-                    console.log( menu );
                     $( ".menu_area" ).html( menu );
                 });
 
