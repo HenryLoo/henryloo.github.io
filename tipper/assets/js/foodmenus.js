@@ -8,8 +8,7 @@
             {
                 //$( ".menu_area" ).load( "parts/menus/menu_"+$(this).val()+".html" );
 
-                var menu = "";
-                menu += '<table class="food_menus menu_' + $(this).val() + ' alt">';
+                var menu = '<table class="food_menus menu_' + $(this).val() + ' alt">';
                 menu += '<thead>';
                 menu += '<tr>';
                 menu += '<th>Name</th>';
@@ -52,12 +51,13 @@
                         }
 
                         console.log( row );
-                        
+
                         if( i == 3 )
                         {
                             i = 0;
                             menu += row;
                             row = "";
+                            console.log( menu );
                         }
                         else
                         {
@@ -68,6 +68,7 @@
 
                 });
 
+                console.log( menu );
                 menu += '</tbody>';
                 menu += '</table>';
 
