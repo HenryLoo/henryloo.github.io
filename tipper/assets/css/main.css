@@ -1586,7 +1586,7 @@
 
 	body {
 		background-color: #fff;
-		color: #999999;
+		color: #444444;
 	}
 
 	body, input, select, textarea {
@@ -1805,7 +1805,7 @@
 	}
 
 	a {
-		color: #999999;
+		color: #444444;
 	}
 
 		a:hover {
@@ -2013,7 +2013,7 @@
 			input[type="button"].alt.icon:before,
 			button.alt.icon:before,
 			.button.alt.icon:before {
-				color: #bfbfbf;
+				color: #9c9c9c;
 			}
 
 		input[type="submit"].special,
@@ -2391,7 +2391,7 @@
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #999999;
+		color: #444444;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2414,23 +2414,23 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: #bfbfbf !important;
+		color: #9c9c9c !important;
 	}
 
 	:-moz-placeholder {
-		color: #bfbfbf !important;
+		color: #9c9c9c !important;
 	}
 
 	::-moz-placeholder {
-		color: #bfbfbf !important;
+		color: #9c9c9c !important;
 	}
 
 	:-ms-input-placeholder {
-		color: #bfbfbf !important;
+		color: #9c9c9c !important;
 	}
 
 	.formerize-placeholder {
-		color: #bfbfbf !important;
+		color: #9c9c9c !important;
 	}
 
 /* Icon */
@@ -2738,7 +2738,7 @@
 	}
 
 	header p {
-		color: #bfbfbf;
+		color: #9c9c9c;
 	}
 
 /* Tab */
@@ -2896,7 +2896,7 @@
 
 		.wrapper.style1 {
 			background-color: #fafafa;
-			color: #999999;
+			color: #444444;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
@@ -2992,7 +2992,7 @@
 					.wrapper.style1 input[type="button"].alt.icon:before,
 					.wrapper.style1 button.alt.icon:before,
 					.wrapper.style1 .button.alt.icon:before {
-						color: #bfbfbf;
+						color: #9c9c9c;
 					}
 
 				.wrapper.style1 input[type="submit"].special,
@@ -3032,7 +3032,7 @@
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #999999;
+				color: #444444;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -3055,23 +3055,23 @@
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #bfbfbf !important;
+				color: #9c9c9c !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #bfbfbf !important;
+				color: #9c9c9c !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #bfbfbf !important;
+				color: #9c9c9c !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #bfbfbf !important;
+				color: #9c9c9c !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #bfbfbf !important;
+				color: #9c9c9c !important;
 			}
 
 			.wrapper.style1 ul.alt li {
@@ -3079,7 +3079,7 @@
 			}
 
 			.wrapper.style1 header p {
-				color: #bfbfbf;
+				color: #9c9c9c;
 			}
 
 			.wrapper.style1 table tbody tr {
@@ -3116,7 +3116,7 @@
 			}
 
 			.wrapper.style2 a {
-				color: #999999;
+				color: #444444;
 			}
 
 				.wrapper.style2 a:hover {
@@ -3874,7 +3874,7 @@
 		}
 
 		#footer .copyright {
-			color: #bfbfbf;
+			color: #9c9c9c;
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
