@@ -3866,6 +3866,7 @@
 
 	#footer {
 		padding: 6em 2em 4em 2em;
+        background-color: #3498db;
 	}
 
 		#footer > .inner {
@@ -3874,7 +3875,7 @@
 		}
 
 		#footer .copyright {
-			color: #9c9c9c;
+			color: #aed6f1;
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
@@ -3882,6 +3883,7 @@
 		}
 
 			#footer .copyright .icons a {
+                background-color: #fff;
 				border-radius: 100%;
 				box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 4px #fff, 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
 				display: block;
